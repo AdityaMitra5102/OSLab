@@ -18,30 +18,17 @@
     </nav>
 
     <div class="input-row">
-        <table>
         <form name = "request_arr">
-            <div class = "form-group" style="margin-left:0px; float:left;">
-                </div>
-               <tr>
-
-                   
-                   <td><label>Size of array:</label></td>
-                   <td><input id="block_no" class="form-control" type="Number" onkeyup="BuildFormFields(parseInt(this.value, 10));" />
-                    </td>
-                </tr>
-                   <div id="FormFields"></div>
-
+            <div class = "form-group" style="margin-left:50px; float:left;">
+                <label>Size of array:</label>
+                <input id="block_no" class="form-control" type="Number" onkeyup="BuildFormFields(parseInt(this.value, 10));" />
+                <div id="FormFields"></div>
             </div>
         </form>
-    </table>
-        </body>
     </div>
 
     <div class="calculate">
-        
         <div>
-            <br>
-          
             <label for="algorithmSelector">Select Disk Scheduling Method</label>
             <select class="form-control" id="algorithmSelector">
                 <option value="optFCFS">First Come First Served [FCFS]</option>
